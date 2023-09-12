@@ -28,6 +28,8 @@ body {
 }
 .page__search {
 }
+.page__about {
+}
 /*header start*/
 .header {
     padding-top: 60px;
@@ -415,3 +417,63 @@ body {
     }
 }
 /*page-search end*/
+
+/*about start*/
+.about {
+    padding-top: 88px;
+}
+.about__container {
+}
+.about__header {
+}
+.about__header:not(:last-child) {
+    margin-bottom: 46px;
+}
+.header-about {
+}
+.header-about__title {
+}
+.title {
+    color: #FFF;
+    font-family: "Nova Square";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 194.8%; /* 136.36/70 */
+}
+.header-about__text {
+}
+.text {
+    color: #9F9F9F;
+    font-family:"Red Hat Display";
+    font-size: 25px;
+    font-weight: 400;
+}
+.about__bottom {
+    display: flex;
+    align-items: center;
+    border-radius: 27px;
+    background: #333;
+    padding: 48px 72px 55px 55px;
+    column-gap: 53px;
+}
+.bottom-about {
+}
+.bottom-about__image {
+}
+.bottom-about__image img {
+    border-radius: 25px;
+    padding-right: 5px;
+}
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.mini-text {
+    color: #fff;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 171.3%; /* 27.408px */
+}
+/*about end*/
