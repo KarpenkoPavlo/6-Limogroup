@@ -919,6 +919,9 @@ body {
 .slider__container {
 }
 .slider__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 .slider__buttons:not(:last-child) {
     margin-bottom: 30px;
@@ -936,6 +939,9 @@ body {
     padding: 0px 50px;
     border-radius: 30px;
 }
+.slider__next-button:hover {
+    background: #484848;
+}
 .slider__menu {
 
 }
@@ -950,9 +956,10 @@ body {
     padding: 20px;
     border-radius: 20px;
     background: #333;
+    width: 1000px;
 }
 .slider__item img{
-    max-width: 100%;
+    width: 500px;
     margin-bottom: 17px;
 }
 .slider__name-car {

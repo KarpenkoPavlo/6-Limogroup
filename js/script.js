@@ -27,4 +27,63 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /**/
+  /*================================*/
+
+// Получаем элементы слайдера
+const prevButton = document.querySelector('.slider__prev-button');
+const nextButton = document.querySelector('.slider__next-button');
+const sliderItems = document.querySelectorAll('.slider__item');
+
+// Устанавливаем начальный индекс текущего слайда
+let currentSlide = 0;
+
+// Функция для отображения слайдов, начиная с указанного индекса
+function showSlides(startIndex) {
+    // Пройдемся по слайдам, начиная с startIndex и до startIndex + 3 (для отображения трех слайдов)
+    for (let i = startIndex; i < startIndex + 3; i++) {
+        // Убедимся, что индекс в пределах допустимых значений
+        if (i < sliderItems.length) {
+            // Показываем слайд
+            sliderItems[i].style.display = 'block';
+        }
+    }
+}
+
+// Обработчик нажатия на кнопку "prev"
+prevButton.addEventListener('click', () => {
+    // Сначала скрываем предыдущие отображенные слайды
+    for (let i = currentSlide; i < currentSlide + 3; i++) {
+        if (i < sliderItems.length) {
+            sliderItems[i].style.display = 'none';
+        }
+    }
+    // Уменьшаем текущий индекс слайда
+    currentSlide--;
+    // Если индекс стал отрицательным, переходим к последнему слайду
+    if (currentSlide < 0) {
+        currentSlide = sliderItems.length - 1;
+    }
+    // Отображаем новый набор слайдов
+    showSlides(currentSlide);
+});
+
+// Обработчик нажатия на кнопку "next"
+nextButton.addEventListener('click', () => {
+    // Сначала скрываем предыдущие отображенные слайды
+    for (let i = currentSlide; i < currentSlide + 3; i++) {
+        if (i < sliderItems.length) {
+            sliderItems[i].style.display = 'none';
+        }
+    }
+    // Увеличиваем текущий индекс слайда
+    currentSlide++;
+    // Если индекс стал больше или равен количеству слайдов, переходим к первому слайду
+    if (currentSlide >= sliderItems.length) {
+        currentSlide = 0;
+    }
+    // Отображаем новый набор слайдов
+    showSlides(currentSlide);
+});
+
+// Показываем начальный набор слайдов
+showSlides(currentSlide);
