@@ -968,7 +968,7 @@ body {
     font-family:"Red Hat Display";
     font-size: 20px;
     font-weight: 400;
-    line-height: 194.8%; /* 38.96px */
+    line-height: 194.8%;
 }
 @media (max-width: 1200px) {
     .slider {
@@ -998,7 +998,7 @@ body {
 }
 @media (max-width: 767.98px) {
     .slider {
-        /* padding-top: 400px; */
+        padding-top: 400px;
     }
     .slider__items {
         flex-direction: column;
@@ -1018,7 +1018,7 @@ body {
         padding-top: 200px;
     }
 }
-/*slider end*/
+/* slider end */
 
 /*brand start*/
 .brand {
@@ -1199,3 +1199,105 @@ body {
     }
 }
 /*choose end*/
+
+/*contact start*/
+
+.contact {
+    padding-top: 87px;
+}
+.contact__container {
+}
+.contact__header {
+}
+.contact__header:not(:last-child) {
+    margin-bottom: 73px;
+}
+.contact__title {
+}
+.title {
+}
+.contact__text {
+}
+.text {
+}
+.contact__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.contact__main {
+}
+.main-contact {
+}
+.contact__forms form{
+    margin-bottom: 30px;
+}
+.contact__forms:not(:last-child) {
+    margin-bottom: 58px;
+}
+.contact-input {
+    width: 636px;
+    border-radius: 9px;
+    background: #3A3A3A;
+    padding: 16px 0px 16px 27px;
+    border: none;
+}
+.contact-input::placeholder {
+    color: #9C9C9C;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 194.8%; /* 31.168px */
+}
+.name {
+}
+.email {
+}
+.number {
+}
+.message {
+}
+.message .contact-input {
+    height: 174px;
+    padding-bottom: 125px;
+}
+.main-contact__footer {
+    display: flex;
+    align-items: center;
+}
+.main-contact-footer__checkbox {
+    border-radius: 2px;
+    background: #3A3A3A;
+    padding: 5px;
+}
+.main-contact-footer__checkbox:not(:last-child) {
+    margin-right: 16px;
+}
+.main-contact-footer__title {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 194.8%; /* 29.22px */
+}
+.main-contact-footer__title {
+    margin-right: 65px;
+}
+.main-contact__button {
+    color: #000;
+    font-family:"Red Hat Display";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 194.8%; /* 29.22px */
+    padding: 13px 53px;
+    border-radius: 8px;
+    background: #fff;
+}
+.contact__image {
+}
+.contact__image img {
+    max-width: 100%;
+    max-height: 540px;
+    border-radius: 16px;
+}
+/*contact end*/
