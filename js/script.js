@@ -1,3 +1,5 @@
+/*============================================================Choose another language*/
+
 document.addEventListener('DOMContentLoaded', function() {
     var currentLanguage = document.querySelector('.current-language');
     var languageList = document.querySelector('.language-list');
@@ -27,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /*================================*/
+  /*==========================================================Slider*/
 
 // Получаем элементы слайдера
 const prevButton = document.querySelector('.slider__prev-button');
@@ -87,3 +89,23 @@ nextButton.addEventListener('click', () => {
 
 // Показываем начальный набор слайдов
 showSlides(currentSlide);
+
+/*=================================================="Back to the top" button*/
+
+// We get the "Back to the top" button
+var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+// Show the button when the user scrolls down the page
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+};
+
+// Scroll the page up when you click on the button
+scrollToTopButton.addEventListener("click", function() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For other browsers
+});
