@@ -72,6 +72,7 @@ body {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 .header__number:hover {
     text-decoration: underline;
@@ -84,6 +85,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     filter: drop-shadow(0px 15px 50px rgba(255, 255, 255, 0.25));
+    cursor: pointer;
 }
 .header__contact:hover {
     background: #727171;
@@ -228,23 +230,6 @@ body {
 .main__image img {
     max-width: 1118px;
 }
-@media (max-width: 1350px) {
-    /* .main__info {
-        padding: 56px 0px 172px 49px;
-    }
-    .main__title {
-        font-size: 70px;
-    }
-    .main__image {
-        padding-left: 400px;
-    }
-    .main__title:not(:last-child) {
-        margin-bottom: 20px;
-    }
-    .main__text:not(:last-child) {
-        margin-bottom: 40px;
-    } */
-}
 @media (max-width: 991.98px) {
     .main__container {
         flex-direction: column;
@@ -310,6 +295,7 @@ body {
     background: #484848;
     padding: 24px 50px;
     border-radius: 11px 0px 0px 0px;
+    cursor: pointer;
 }
 .header-search__distance:hover {
     background: #272727;
@@ -318,6 +304,7 @@ body {
     background: #484848;
     padding: 24px 50px;
     border-radius: 0px 11px 0px 0px;
+    cursor: pointer;
 }
 .header-search__hourly:hover {
     background: #272727;
@@ -583,10 +570,12 @@ body {
     gap: 26px;
 }
 .info-services__item {
+    display: grid;
     margin: 0 auto;
     padding: 20px;
     border-radius: 20px;
     background: #333;
+    align-items: center;
 }
 .info-services__image {
 }
@@ -759,6 +748,8 @@ body {
 }
 .car-info__button {
     color: #000;
+    position: relative;
+    z-index: 5;
     font-family:"Red Hat Display";
     font-size: 18px;
     font-weight: 400;
@@ -767,6 +758,12 @@ body {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 15px 50px 0px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+.car-info__button:hover {
+    background: #666;
+    color: #fff;
+    transition: all 0.3s ease 0s;
 }
 .car-info__price {
 }
@@ -1632,3 +1629,63 @@ input[type="checkbox"] {
     }
 }
 /*footer end*/
+
+/*=====================================*/
+
+.slider-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+.slide {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+    background: #333;
+    padding: 25px;
+}
+.slider__text {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 194.8%; /* 38.96px */
+}
+slide img {
+    max-width: 100%;
+    height: auto;
+}
+.slide img {
+    margin-bottom: 17px;
+}
+button-slider {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.prev img {
+    width: 50px;
+}
+.next img {
+    width: 50px;
+}
