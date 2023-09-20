@@ -1,0 +1,212 @@
+.fleets {
+    padding-top: 88px;
+}
+.fleets__container {
+}
+.fleets__container:not(:last-child) {
+    margin-bottom: 35px;
+}
+.fleets__title {
+}
+.fleets__text {
+}
+.fleets-car__background {
+    max-width: 1716px;
+    max-height: 382px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: no-repeat url(/img/fleets/fleets-background.jpg);
+}
+.fleets-car__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;;
+}
+.fleets-car__container:not(:last-child) {
+    margin-bottom: 50px;
+}
+.car-info {
+}
+.car-info__left {
+}
+.car-info__title {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 194.8%; /* 116.88px */
+}
+.car-info__title:not(:last-child) {
+    margin-bottom: 2px;
+}
+.car-info__text {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 147.8%; /* 44.34px */
+}
+.car-info__text:not(:last-child) {
+    margin-bottom: 54px;
+}
+.car-info__button {
+    color: #000;
+    position: relative;
+    z-index: 5;
+    font-family:"Red Hat Display";
+    font-size: 18px;
+    font-weight: 400;
+    padding: 13px 61px;
+    line-height: 194.8%; /* 35.064px */
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 15px 50px 0px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+.car-info__button:hover {
+    background: #666;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.car-info__price {
+}
+.car-price {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.car-money {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 194.8%; /* 116.88px */
+}
+.car-slash {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 194.8%;
+}
+.car-perhour {
+    color: #A7A7A7;
+    font-family:"Red Hat Display";
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 194.8%;
+}
+.car-info__image {
+    position: relative;
+    margin-top: -270px;
+    padding-left: 736px;
+}
+.car-info__image img {
+    max-width: 100%;
+}
+@media (max-width: 1440px) {
+    .car-info__image {
+        padding-left: 500px;
+    }
+}
+@media (max-width: 1200px) {
+    .car-info__title {
+        font-size: 40px;
+    }
+    .car-info__text {
+        font-size: 25px;
+    }
+    .car-money,
+    .car-slash {
+        font-size: 40px;
+    }
+    .car-perhour {
+        font-size: 30px;
+    }
+    .car-info__image {
+        margin-top: -200px;
+    }
+}
+@media (max-width: 1100px) {
+    .car-info__image {
+        padding-left: 240px;
+    }
+}
+@media (max-width: 991.98px) {
+    .car-info__image {
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+    .car-info {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .car-money,
+    .car-slash {
+        font-size: 60px;
+    }
+    .car-perhour {
+        font-size: 48px;
+    }
+    .fleets-car__background {
+        padding-left: 100px;
+    }
+    .car-info__image {
+        margin-top: -70px;
+    }
+}
+@media (max-width: 767.98px) {
+    .fleets {
+        padding-top: 58px;
+    }
+    .fleets-car__background {
+        padding-left: 0;
+    }
+    .fleets__title {
+        font-size: 60px;
+    }
+    .fleets__text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 479.98px) {
+    .fleets {
+        padding-top: 38px;
+    }
+    .car-info__title {
+        font-size: 25px;
+    }
+    .car-info__text {
+        font-size: 20px;
+    }
+    .car-info__text:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .car-info {
+        row-gap: 30px;
+    }
+    .car-money,
+    .car-slash {
+        font-size: 40px;
+    }
+    .car-perhour {
+        font-size: 28px;
+    }
+    .fleets__title {
+        font-size: 40px;
+    }
+    .fleets__text {
+        font-size: 15px;
+    }
+    .fleets__container:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .fleets-car__background {
+        max-height: 310px;
+    }
+    .car-info__image {
+        padding-top: 30px;
+    }
+}

@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   function updateSlider() {
       slides.forEach((slide, index) => {
-          const offset = (index - currentIndex) * 100;
+          const offset = (index - currentIndex) * 20;
           slide.style.transform = `translateX(${offset}%)`;
       });
   }

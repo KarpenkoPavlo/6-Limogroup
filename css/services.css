@@ -1,0 +1,146 @@
+.services {
+    padding-top: 91px;
+}
+.services__container {
+}
+.services__title {
+}
+.services__text {
+}
+.services__text:not(:last-child) {
+    margin-bottom: 56px;
+}
+.services__info {
+}
+.info-services {
+}
+.info-services__list {
+}
+.info-services__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+}
+.info-services__item {
+    display: grid;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: #333;
+    align-items: center;
+}
+.info-services__image {
+}
+.info-services__image:not(:last-child) {
+    margin-bottom: 29px;
+}
+.info-services__right {
+}
+.info-services__title {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1; /* 25/25 */
+}
+.info-services__title:not(:last-child) {
+    margin-bottom: 9px;
+}
+.info-services__text {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 131.25%; /* 21/16 */
+    /* max-width: 290px; */
+}
+.info-services__text:not(:last-child) {
+    margin-bottom: 19px;
+}
+.info-services__button {
+    color: #000;
+    font-family:"Red Hat Display";
+    padding: 6px 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 166.666667%; /* 25/15 */
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 15px 50px 0px rgba(255, 255, 255, 0.25);
+}
+.info-services__button:hover {
+    background: #000;
+    color: #fff;
+}
+@media (max-width: 1430px) {
+    .info-services__items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .info-services__item {
+        display: flex;
+        gap: 30px;
+    }
+    .info-services__title:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .info-services__text:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .info-services__button {
+    }
+}
+@media (max-width: 1024px) {
+    .info-services__item {
+        display: grid;
+    }
+    .info-services__image {
+        margin: 0 auto;
+    }
+    .info-services__image:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767.98px) {
+    .services {
+        padding-top: 71px;
+    }
+    .info-services__image img {
+        max-width: 100%;
+    }
+    .info-services__image:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    .info-services__items {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .info-services__image img {
+        width: 500px;
+    }
+    .info-services__item {
+        max-width: 600px;
+    }
+    .services__title {
+        font-size: 60px;
+    }
+    .services__text {
+        font-size: 20px;
+    }
+    .services__text:not(:last-child) {
+        margin-bottom: 36px;
+    }
+}
+@media (max-width: 479.98px) {
+    .services {
+        padding-top: 31px;
+    }
+    .services__title {
+        font-size: 40px;
+    }
+    .services__text {
+        font-size: 15px;
+    }
+    .services__text:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}

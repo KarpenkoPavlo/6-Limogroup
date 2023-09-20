@@ -1,0 +1,101 @@
+.main {
+    padding-top: 50px;
+}
+.main__background {
+    max-width: 1716px;
+    min-height: 710px;
+    background-color: #FFF;
+    border-radius: 41px;
+    padding: 66px 28px;
+    margin: 0 auto;
+}
+.main__container {
+    position: relative;
+    display: flex;
+}
+.main__info {
+    padding: 66px 0px 192px 61px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.main__title {
+    font-family: "Nova Square";
+    color: #000;
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 1.1; /* 121.88px */
+}
+.main__title:not(:last-child) {
+    margin-bottom: 32px;
+}
+.main__text {
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+}
+.main__text:not(:last-child) {
+    margin-bottom: 53px;
+}
+.main__button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 61px;
+    border-radius: 9px;
+    background: #000;
+}
+.main__button:hover {
+    background: #727171;
+    transition: all 0.5s ease 0s;
+}
+.main__image {
+    padding-left: 400px;
+}
+.main__image img {
+    max-width: 1118px;
+}
+@media (max-width: 991.98px) {
+    .main__container {
+        flex-direction: column;
+    }
+    .main__background {
+        padding: 10px 10px;
+    }
+    .main__info {
+        position: relative;
+        padding: 26px 0px 10px 26px;
+    }
+    .main__image {
+        margin-top: -150px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 767.98px) {
+    .main__info {
+        padding: 16px 0px 152px 19px;
+    }
+    .main__image img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 479.98px) {
+    .main__background {
+        min-height: 510px;
+    }
+    .main__info {
+        padding: 10px 0px 132px 15px;
+    }
+    .main__image {
+        margin-top: -100px;
+    }
+    .main__title {
+        font-size: 50px;
+    }
+    .main__text {
+        font-size: 20px;
+    }
+    .main__title:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
