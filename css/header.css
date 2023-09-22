@@ -1,7 +1,7 @@
 .header {
     padding-top: 60px;
 }
-.header__container {
+.header__background {
     display: flex;
     justify-content: space-between;
     max-width: 1716px;
@@ -9,6 +9,7 @@
     column-gap: 50px;
     row-gap: 20px;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 .header__logo {
 }
@@ -68,6 +69,44 @@
     color: #fff;
     transition: all 0.5s ease 0s;
 }
+@media (max-width: 1500px) {
+    .header__right {
+        width: 900px;
+    }
+}
+@media (max-width: 1212px) {
+    .header__right {
+        width: 100%;
+    }
+}
+@media (max-width: 991.98px) {
+    .header__container {
+        align-items: start;
+        flex-direction: column;
+    }
+    .header__logo:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .header__right {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+@media (max-width: 479.98px) {
+    .header__right {
+        row-gap: 50px;
+    }
+    .menu-header__items {
+        align-items: center;
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .header__info {
+        row-gap: 30px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+}
 /*language*/
 .language-container {
     display: inline-block;
@@ -107,42 +146,3 @@
     font-size: 0.8em;
 }
 /*language*/
-@media (max-width: 1500px) {
-    .header__right {
-        width: 900px;
-    }
-}
-@media (max-width: 1212px) {
-    .header__right {
-        /* margin: 0 auto; */
-        width: 100%;
-    }
-}
-@media (max-width: 991.98px) {
-    .header__container {
-        align-items: start;
-        flex-direction: column;
-    }
-    .header__logo:not(:last-child) {
-        margin-bottom: 20px;
-    }
-    .header__right {
-        flex-direction: column;
-        row-gap: 30px;
-    }
-}
-@media (max-width: 479.98px) {
-    .header__right {
-        row-gap: 50px;
-    }
-    .menu-header__items {
-        align-items: center;
-        row-gap: 30px;
-        flex-direction: column;
-    }
-    .header__info {
-        row-gap: 30px;
-        flex-wrap: wrap-reverse;
-        justify-content: space-between;
-    }
-}

@@ -10,6 +10,8 @@
 @import url(choose.css);
 @import url(contact.css);
 @import url(footer.css);
+/*==============Booking1=============== */
+@import url(booking-main.css);
 /*=====================================*/
 @import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:regular,500,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Nova+Square:regular&display=swap);
@@ -25,52 +27,10 @@ body {
     display: flex;
     flex-direction: column;
     overflow: clip;
+    padding: 0px 15px; /*maybe delete*/
 }
 [class*="__container"] {
     max-width: 1400px;
     padding: 0px 15px;
     margin: 0 auto;
 }
-/*header start*/
-
-/*header end*/
-
-/*page-main start*/
-
-/*page-main end*/
-
-/*page-search start*/
-
-/*page-search end*/
-
-/*about start*/
-
-/*about end*/
-
-/*services start*/
-
-/*services end*/
-
-/*fleets start*/
-
-/*fleets end*/
-
-/*slider start*/
-
-/* slider end */
-
-/*brand start*/
-
-/*brand end*/
-
-/*choose start*/
-
-/*choose end*/
-
-/*contact start*/
-
-/*contact end*/
-
-/*footer start*/
-
-/*footer end*/
