@@ -24,6 +24,7 @@
     text-align: center;
 }
 .navigation__circle {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +36,10 @@
     font-family:"Red Hat Display";
     font-size: 22px;
     font-weight: 600;
+}
+.navigation__circle:hover {
+    background-color: #969696;
+    color: #000;
 }
 .navigation__circle:not(:last-child) {
     margin-bottom: 11px;
@@ -49,6 +54,48 @@
 }
 .navigation-line__block {
     width: 150px;
-    height: 1px;
+    height: 2px;
     background-color: #464646;
+}
+.navigation__circle1 {
+}
+.navigation__circle2 {
+    background-color: #fff;
+    color: #000;
+}
+.navigation__circle3 {
+}
+.navigation__circle4 {
+}
+@media (max-width: 1430px) {
+    .navigation__items {
+        padding: 21px 100px;
+    }
+}
+@media (max-width: 1220px) {
+    .navigation__items {
+        padding: 21px 50px;
+    }
+}
+@media (max-width: 991.98px) {
+    .navigation-line__block {
+        width: 80px;
+    }
+}
+@media (max-width: 767.98px) {
+    .navigation__background {
+        max-width: 500px;
+    }
+    .navigation__items {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .navigation-line__block {
+        width: 300px;
+    }
+}
+@media (max-width: 479.98px) {
+    .navigation-line__block {
+        width: 250px;
+    }
 }
