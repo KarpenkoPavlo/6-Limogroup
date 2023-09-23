@@ -1,0 +1,54 @@
+.navigation {
+    padding-top: 32px;
+}
+.navigation__background {
+    max-width: 1716px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #282828;
+}
+.navigation__menu {
+}
+.navigation__list {
+}
+.navigation__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 200px;
+}
+.navigation__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.navigation__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #464646;
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 22px;
+    font-weight: 600;
+}
+.navigation__circle:not(:last-child) {
+    margin-bottom: 11px;
+}
+.navigation__text {
+    color: #969696;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+}
+.navigation__line {
+}
+.navigation-line__block {
+    width: 150px;
+    height: 1px;
+    background-color: #464646;
+}
