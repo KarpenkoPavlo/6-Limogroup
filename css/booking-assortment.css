@@ -35,6 +35,8 @@
 }
 .assortment-lb__title {
 }
+.assortment-left__menu-block {
+}
 .lb-title {
     color: rgba(189, 189, 189, 0.50);
     font-family:"Red Hat Display";
@@ -116,6 +118,7 @@
     line-height: 194.8%; /* 48.7px */
 }
 .assortment-rih__button {
+    text-align: center;
     background: #FFF;
     color: #070707;
     font-family: "Red Hat Display";
@@ -186,4 +189,55 @@
 }
 .assortment-right__line:not(:last-child) {
     margin-bottom: 36px;
+}
+@media (max-width: 1480px) {
+    .assortment-ri__header,
+    .assortment-ri__down {
+        width: 485px;
+    }
+    .assortment-right__line img {
+        width: 890px;
+    }
+}
+@media (max-width: 1250px) {
+    .assortment__container {
+        display: grid;
+        justify-content: center;
+    }
+    .assortment__left {
+        margin: 0 auto;
+    }
+    .assortment__left:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .assortment-left__menu {
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 450px;
+    }
+    .assortment-left-down__line img {
+        width: 450px;
+    }
+    .assortment-left-down__block {
+        margin: 0 auto;
+    }
+    .assortment-ldb__title,
+    .assortment-ldb__subtitle {
+        font-size: 25px;
+    }
+}
+@media (max-width: 991.98px) {
+    .assortment-right__item {
+        display: grid;
+    }
+    .assortment-ri__background {
+        margin: 0 auto;
+    }
+    .assortment-ri__background:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .assortment-ri__right {
+        max-width: 800px;
+    }
 }
