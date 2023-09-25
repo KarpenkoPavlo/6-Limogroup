@@ -128,6 +128,11 @@
     padding: 11px 60px;
     border-radius: 5px;
 }
+.assortment-rih__button:hover {
+    background: #545151;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
 .assortment-ri__price {
     color: #FFF;
     font-family:"Red Hat Display";
@@ -154,6 +159,10 @@
     align-items: center;
     border-radius: 50%;
     background-color: #EFEFEF;
+}
+.assortment-rid__circle:hover {
+    background-color: #887f7f;
+    transition: all 0.3s ease 0s;
 }
 .assortment-rid__text {
     color: #FFF;
@@ -191,15 +200,6 @@
     margin-bottom: 36px;
 }
 @media (max-width: 1480px) {
-    .assortment-ri__header,
-    .assortment-ri__down {
-        width: 485px;
-    }
-    .assortment-right__line img {
-        width: 890px;
-    }
-}
-@media (max-width: 1250px) {
     .assortment__container {
         display: grid;
         justify-content: center;
@@ -210,34 +210,100 @@
     .assortment__left:not(:last-child) {
         margin-bottom: 50px;
     }
-    .assortment-left__menu {
-        display: grid;
-        justify-content: center;
-        margin: 0 auto;
-        max-width: 450px;
-    }
     .assortment-left-down__line img {
-        width: 450px;
+        width: 500px;
     }
     .assortment-left-down__block {
         margin: 0 auto;
+    }
+    .assortment-left__title {
+        font-size: 25px;
+    }
+    .assortment-lb__title {
+        font-size: 20px;
+    }
+    .assortment-lb__subtitle {
+        font-size: 25px;
     }
     .assortment-ldb__title,
     .assortment-ldb__subtitle {
         font-size: 25px;
     }
+    .assortment-left__block {
+        text-align: center;
+    }
+    .assortment-left__block:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .assortment-left__menu {
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 500px;
+        max-height: 680px;
+    }
+    .assortment-left__menu:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .assortment-left__line {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1120px) {
     .assortment-right__item {
         display: grid;
+        justify-content: center;
+    }
+    .assortment-right__line {
+        width: 690px;
+        display: grid;
+        justify-content: center;
     }
     .assortment-ri__background {
         margin: 0 auto;
     }
     .assortment-ri__background:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 767.98px) {
+    .assortment-ri__background:not(:last-child) {
         margin-bottom: 30px;
     }
-    .assortment-ri__right {
-        max-width: 800px;
+    .assortment-ri__header {
+        width: 400px;
+        display: grid;
+        justify-content: center;
+    }
+    .assortment-ri__down {
+        width: 400px;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+    }
+    .assortment-ri__price {
+        text-align: center;
+    }
+    .assortment-rid__more-info:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .assortment-ri__background {
+        width: 300px;
+    }
+    .assortment-ri__background img {
+        width: 280px;
+    }
+}
+@media (max-width: 520px) {
+    .assortment-left__menu {
+        width: 300px;
+        max-height: 700px;
+    }
+    .assortment-lb__title {
+        font-size: 18px;
+    }
+    .assortment-lb__subtitle {
+        font-size: 20px;
     }
 }
