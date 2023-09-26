@@ -123,8 +123,7 @@
     line-height: 192.8%; /* 34.704px */
 }
 .footer__line {
-    margin-left: -20%;
-    width: 1914.5px;
+    max-width: 1914.5px;
     height: 2px;
     background: #D8D8D8;
 }
@@ -218,17 +217,22 @@
         width: 290px;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 370px) {
+    .subscribe__form input {
+        width: 260px;
+    }
     .footer__logo {
         display: flex;
         justify-content: center;
     }
     .footer__logo-image img {
-        max-width: 59px;
+        max-width: 85px;
         height: auto;
     }
     .footer__name-image img {
-        max-width: 129px;
+        max-width: 155px;
         height: auto;
     }
+}
+@media (max-width: 350px) {
 }
