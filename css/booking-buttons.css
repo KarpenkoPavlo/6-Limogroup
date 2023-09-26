@@ -1,0 +1,49 @@
+
+.booking-buttons {
+    padding-top: 100px;
+}
+.booking-buttons__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-buttons__left,
+.booking-buttons__right {
+    display: flex;
+    background-color: #fff;
+    padding: 12px 22px;
+    border-radius: 10px;
+    column-gap: 20px;
+    align-items: center;
+}
+.booking-buttons__left:hover,
+.booking-buttons__right:hover {
+    background-color: rgb(177, 171, 171);
+    height: 50px;
+    transition: all 0.3s ease 0s;
+}
+.booking-button-left__text,
+.booking-button-right__text {
+    color: #000;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 194.8%; /* 31.168px */
+}
+.booking-button-left__text img,
+.booking-button-right__text img {
+}
+@media (max-width: 767.98px) {
+    .booking-buttons__left,
+    .booking-buttons__right {
+        padding: 10px 15px;
+        column-gap: 10px;
+    }
+}
+@media (max-width: 479.98px) {
+    .booking-buttons__container {
+        display: grid;
+        justify-content: center;
+        row-gap: 10px;
+    }
+}
