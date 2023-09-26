@@ -1,0 +1,113 @@
+.assortment-left__menu {
+    max-width: 289px;
+    max-height: 644px;
+    border-radius: 17px;
+    background: #333;
+    padding: 32px 22px 22px 22px;
+}
+.assortment-left-down__block:not(:last-child) {
+    margin-bottom: 20px;
+}
+.assortment-left__menu:not(:last-child) {
+    margin-bottom: 36px;
+}
+/*================form-payment============*/
+.assortment__right {
+    display: grid;
+}
+.form__title {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 20px;
+    font-weight: 600;
+}
+.assortment__forms {
+    width: 1050px;
+}
+.forms__grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 52px;
+    row-gap: 32px;
+}
+.forms__grid:not(:last-child) {
+    margin-bottom: 32px;
+}
+.grid__form {
+    padding: 22px 40px;
+    border-radius: 7px;
+    background: #333;
+}
+.grid__form ::placeholder {
+    color: #9E9E9E;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-grid__input {
+    border: none;
+    width: 100%;
+}
+.form-grid__input::placeholder {
+    background: #333;
+}
+.form-grid__input:focus {
+    outline: none;
+    background: #333;
+}
+.down-text {
+    height: 178px;
+    padding: 22px 40px;
+    border-radius: 7px;
+    background: #333;
+}
+.form-text__input {
+    border: none;
+    width: 100%;
+}
+.form-text__input::placeholder {
+    background: #333;
+    color: #9E9E9E;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-text__input:focus {
+    outline: none;
+    background: #333;
+}
+.assortment__payment-method {
+    align-self: end;
+}
+.payment__title {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 20px;
+    font-weight: 600;
+}
+.payment__title:not(:last-child) {
+    margin-bottom: 24px;
+}
+.payment__flex {
+    display: flex;
+    column-gap: 24px;
+}
+.payment-flex__stripe {
+    border: 1px solid #BABABA;
+    background: #FFF;
+    padding: 17px 56px 11px 56px;
+}
+.payment-flex__paypal {
+    border: 1px solid #BABABA;
+    background: #FFF;
+    padding: 28px 37px 21px 37px;
+}
+/*visible=none|form-number*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
