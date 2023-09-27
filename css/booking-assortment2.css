@@ -23,6 +23,10 @@
 }
 .assortment__forms {
     width: 1050px;
+    margin: 0 auto;
+}
+.assortment__forms:not(:last-child) {
+    margin-bottom: 50px;
 }
 .forms__grid {
     display: grid;
@@ -64,6 +68,8 @@
 .form-text__input {
     border: none;
     width: 100%;
+    height: 100%;
+    background: #333;
 }
 .form-text__input::placeholder {
     background: #333;
@@ -71,6 +77,9 @@
     font-family:"Red Hat Display";
     font-size: 16px;
     font-weight: 400;
+}
+textarea {
+    color: #fff;
 }
 .form-text__input:focus {
     outline: none;
@@ -110,4 +119,90 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #333;
     color: #fff;
     border: none;
+}
+@media (max-width: 1480px) {
+    .assortment-left__menu {
+        max-width: 389px;
+        max-height: 1020px;
+    }
+    .form__title:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1100px) {
+    .assortment__forms {
+        width: 930px;
+    }
+    .forms__grid {
+        column-gap: 32px;
+        row-gap: 22px;
+    }
+    .forms__grid:not(:last-child) {
+        margin-bottom: 22px;
+    }
+    .down-text {
+        height: 148px;
+    }
+}
+@media (max-width: 991.98px) {
+    .assortment__forms {
+        width: 630px;
+    }
+    .forms__grid {
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+    .forms__grid:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .down-text {
+        height: 128px;
+    }
+    .payment__title {
+        text-align: center;
+    }
+    .form__title {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767.98px) {
+    .forms__grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .forms__grid {
+        row-gap: 20px;
+    }
+    .forms__grid:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .payment-flex__stripe {
+        padding: 9px 48px 3px 48px;
+    }
+    .payment-flex__paypal {
+        padding: 20px 29px 13px 29px;
+    }
+    .payment__flex img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 660px) {
+    .assortment__forms {
+        width: 430px;
+    }
+    .payment__flex {
+        display: grid;
+    }
+    .payment-flex__stripe:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .payment-flex__stripe,
+    .payment-flex__paypal {
+        margin: 0 auto;
+    }
+}
+@media (Max-width: 479.98px) {
+    .assortment__forms {
+        width: 300px;
+    }
 }
