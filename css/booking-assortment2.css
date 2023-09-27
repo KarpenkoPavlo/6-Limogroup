@@ -51,6 +51,7 @@
 .form-grid__input {
     border: none;
     width: 100%;
+    background: #333;
 }
 .form-grid__input::placeholder {
     background: #333;
@@ -70,6 +71,9 @@
     width: 100%;
     height: 100%;
     background: #333;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
 }
 .form-text__input::placeholder {
     background: #333;

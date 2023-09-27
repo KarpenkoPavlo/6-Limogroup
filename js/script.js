@@ -1,4 +1,4 @@
-/*============================================================Choose another language*/
+/*==========================Choose another language==================================*/
 
 document.addEventListener('DOMContentLoaded', function() {
     var currentLanguage = document.querySelector('.current-language');
@@ -77,5 +77,3 @@ scrollToTopButton.addEventListener("click", function() {
 });
 
 /*=====================================*/
-
-// Инициализация Swiper.js
