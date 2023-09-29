@@ -1,0 +1,197 @@
+.assortment__container {
+    justify-content: center;
+    gap: 47px;
+}
+.assortment__left-right {
+    display: flex;
+    gap: 47px;
+}
+.assortment__left {
+}
+.assortment-left__menu {
+    max-width: 530px;
+    max-height: 661px;
+    padding: 32px 38px 25px 32px;
+}
+.assortment-left__menu:not(:last-child) {
+    margin-bottom: 30px;
+}
+.assortment-left__title {
+}
+.assortment-left__menu-block {
+}
+.assortment-left__block {
+}
+.assortment-lb__title {
+}
+.lb-title {
+}
+.assortment-lb__subtitle {
+}
+.lb-subtitle {
+}
+.assortment-left__line {
+}
+.assortment__left-button {
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 23px;
+}
+.assortment__left-button:hover {
+    background-color: #746e6e;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.assortment-left__down-menu {
+    border-radius: 17px;
+    background: #333;
+    padding: 32px 38px 25px 32px;
+}
+.assortment__right {
+}
+.assortment__right:not(:last-child) {
+    margin-bottom: 30px;
+}
+.assortment-r-image {
+}
+.assortment-r-image img {
+    max-width: 100%;
+}
+.assortment-r-image:not(:last-child) {
+    margin-bottom: -20px;
+}
+#left-menu-p {
+    width: 435.559px;
+    border-radius: 0px 0px 17px 17px;
+}
+.assortment__end {
+}
+.assortment-end__up {
+    position: relative;
+}
+.assortment-end__up:not(:last-child) {
+    margin-bottom: 30px;
+}
+.assortment-end__image {
+    border-radius: 17px;
+    background: #333;
+    padding: 70px 25px 75px 25px;
+}
+.assortment-end__image {
+}
+.assortment-end__button {
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    bottom: 233px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    font-family:"Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 25px;
+}
+.assortment-end__button:hover {
+    background-color: #746e6e;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.assortment-end__down {
+}
+.assortment-end__down-title {
+    color: #FFF;
+    font-family:"Red Hat Display";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 194.8%; /* 58.44px */
+}
+.assortment-end__down-title:not(:last-child) {
+    margin-bottom: 25px;
+}
+.assortment-left-down__block {
+}
+.assortment-ldb__title {
+}
+.assortment-ldb__title:not(:last-child) {
+    margin-bottom: 25px;
+}
+.lb-subtitle {
+}
+.assortment-ldb__subtitle {
+}
+.assortment-left-down__line {
+    text-align: center;
+}
+@media (max-width: 1480px) {
+    .assortment__container {
+        display: grid;
+    }
+    .assortment-left__menu {
+        max-height: 1000px;
+    }
+    .assortment__right {
+        display: grid;
+        justify-content: center;
+    }
+    .assortment-ldb__title {
+        text-align: center;
+    }
+    .assortment-end__down-title {
+        text-align: center;
+    }
+    .assortment-end__up {
+        max-width: 437.566px;
+        margin: 0 auto;
+    }
+    .assortment-left-down__line img {
+        max-width: 437.566px;
+    }
+    .assortment__end {
+        display: flex;
+    }
+}
+@media (max-width: 991.98px) {
+    .assortment__left-right {
+        display: grid;
+    }
+    .assortment__end {
+        display: grid;
+    }
+    .assortment-end__image {
+        text-align: center;
+        width: 435.559px;
+    }
+    .assortment-end__button {
+        left: 32px;
+    }
+}
+@media (max-width: 520px) {
+    .assortment-left__line {
+        display: grid;
+        justify-content: center;
+    }
+    .assortment__right img {
+        text-align: center;
+    }
+    .assortment__right {
+        margin: 0 auto;
+    }
+    .assortment__end,
+    .assortment-left__down-menu,
+    .assortment-left__menu {
+        width: 390px;
+    }
+    .assortment__left-right {
+        text-align: center;
+    }
+    .assortment-end__button {
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}

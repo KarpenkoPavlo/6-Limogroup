@@ -10,7 +10,7 @@
 @import url(choose.css);
 @import url(contact.css);
 @import url(footer.css);
-/*==============Booking1=============== */
+/*==============Booking=============== */
 @import url(booking-main.css);
 @import url(booking-navigation.css);
 @import url(booking-assortment.css);
@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: clip;
-    padding: 0px 15px; /*maybe delete*/
+    padding-top: 140px;
 }
 [class*="__container"] {
     max-width: 1400px;

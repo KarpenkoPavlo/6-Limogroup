@@ -77,3 +77,12 @@ scrollToTopButton.addEventListener("click", function() {
 });
 
 /*=====================================*/
+
+document.addEventListener("DOMContentLoaded", function() ) {
+  const showMessageButton = dispatchEvent.getElementById("main-contact__button");
+  const messageContainer = dispatchEvent.getElementById("main-contact__footer");
+}
+  showMessageButton.addEventListener("click", function() ) {
+    const message = ")))";
+    messageContainer.textContent = message;
+  }
