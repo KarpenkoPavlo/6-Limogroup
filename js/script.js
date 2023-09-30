@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   function updateSlider() {
       slides.forEach((slide, index) => {
-          const offset = (index - currentIndex) * 20;
+          const offset = (index - currentIndex) * 50;
           slide.style.transform = `translateX(${offset}%)`;
       });
   }
@@ -78,11 +78,26 @@ scrollToTopButton.addEventListener("click", function() {
 
 /*=====================================*/
 
-document.addEventListener("DOMContentLoaded", function() ) {
-  const showMessageButton = dispatchEvent.getElementById("main-contact__button");
-  const messageContainer = dispatchEvent.getElementById("main-contact__footer");
+function showMessage() {
+  alert("Thanks for subscribing)");
 }
-  showMessageButton.addEventListener("click", function() ) {
-    const message = ")))";
-    messageContainer.textContent = message;
-  }
+
+/*=====================================*/
+
+function showMessageEdit() {
+  alert("Error 404(");
+}
+
+/*=====================================*/
+
+function footer__li1() {
+  alert("I am footer li 1)");
+}
+function footer__li2() {
+  alert("I am footer li 2)");
+}
+function footer__li3() {
+  alert("I am footer li 3)");
+}
+
+//

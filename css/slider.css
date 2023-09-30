@@ -47,6 +47,10 @@
     width: 500px;
     margin-bottom: 17px;
 }
+.slide img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease 0s;
+}
 .slider__name-car {
     text-align: center;
     color: #FFF;

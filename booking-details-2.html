@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/booking-navigation2.css">
     <link rel="stylesheet" href="css/booking-assortment2.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico.png">
     <title>Booking Details 2</title>
 </head>
 <body>
@@ -15,23 +16,23 @@
             <div class="header__background">
                 <div class="header__logo">
                     <a href="index.html" class="header-logo__link">
-                        <img src="img/header/header-logo.jpg" alt="header-logo">
+                        <img src="img/header/logo-header.svg" alt="header-logo">
                     </a>
                 </div>
                 <div class="header__right">
                     <nav class="header__menu menu-header">
                         <ul class="menu-header__items">
                             <li class="menu-header__item">
-                                <a href="#" class="menu-header__link">Home</a>
+                                <a href="booking-details-2.html" class="menu-header__link">Home</a>
                             </li>
                             <li class="menu-header__item">
-                                <a href="#" class="menu-header__link">About Us</a>
+                                <a href="index.html" class="menu-header__link">About Us</a>
                             </li>
                             <li class="menu-header__item">
-                                <a href="#" class="menu-header__link">Our Services</a>
+                                <a href="index.html" class="menu-header__link">Our Services</a>
                             </li>
                             <li class="menu-header__item">
-                                <a href="#" class="menu-header__link">Fleets</a>
+                                <a href="index.html" class="menu-header__link">Fleets</a>
                             </li>
                         </ul>
                     </nav>
@@ -48,7 +49,7 @@
                                 <li><a href="#" data-lang="fr">FRN</a></li>
                             </ul>
                         </div>
-                        <a class="header__contact">Contact Us</a>
+                        <a href="index.html" class="header__contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -199,12 +200,12 @@
                         <div class="assortment__payment-method">
                             <div class="payment__title">Choose payment method</div>
                             <div class="payment__flex">
-                                <div class="payment-flex__stripe">
+                                <a href="https://stripe.com/" class="payment-flex__stripe">
                                     <img src="img/booking2__assortment/payment-method_01.jpg" alt="payment">
-                                </div>
-                                <div class="payment-flex__paypal">
+                                </a>
+                                <a href="https://www.paypal.com/ua/home" class="payment-flex__paypal">
                                     <img src="img/booking2__assortment/payment-method_02.jpg" alt="payment">
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +257,7 @@
                         </div>
                         <form action="#" class="subscribe__form">
                             <input type="email" placeholder="example@gmail.com">
-                            <button class="button__subscribe">Subscribe</button>
+                            <button onclick="showMessage()" class="button__subscribe">Subscribe</button>
                         </form>
                     </div>
                     <div class="footer__grid">
@@ -269,9 +270,9 @@
                             </div>
                         </div>
                         <ul class="footer__l-p-t">
-                            <li class="footer__legal">Legal</li>
-                            <li class="footer__privacy">Privacy Policy</li>
-                            <li class="footer__terms">Terms of Use</li>
+                            <li onclick="footer__li1()" class="footer__legal">Legal</li>
+                            <li onclick="footer__li2()" class="footer__privacy">Privacy Policy</li>
+                            <li onclick="footer__li3()" class="footer__terms">Terms of Use</li>
                         </ul>
                     </div>
                 </div>
@@ -305,5 +306,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

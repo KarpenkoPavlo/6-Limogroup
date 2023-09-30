@@ -42,7 +42,9 @@
     font-weight: 400;
 }
 .menu-header__item:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+    color: #fff;
 }
 .menu-header__link {
 }
@@ -58,7 +60,8 @@
     cursor: pointer;
 }
 .header__number:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
 }
 .header__contact {
     background-color: #fff;
@@ -122,7 +125,8 @@
     cursor: pointer;
 }
 .current-language:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
 }
 .language-list {
     display: none;

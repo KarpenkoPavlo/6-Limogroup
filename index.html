@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico.png">
     <title>Limogroup</title>
 </head>
 <body>
@@ -73,8 +74,8 @@
             <section class="page__search search">
                 <div class="search__container">
                     <div class="serach__header header-search">
-                        <a class="header-search__distance">Distance</a>
-                        <a class="header-search__hourly">Hourly</a>
+                        <a href="booking-details-3.html" class="header-search__distance">Distance</a>
+                        <a href="booking-details-3.html" class="header-search__hourly">Hourly</a>
                     </div>
                     <div class="serach__bottom bottom-search">
                         <nav class="bottom-search__list">
@@ -286,7 +287,7 @@
                         <span class="slider__text">Mersedes Benz V-Class</span>
                     </a>
                     <a href="booking-details-1.html" class="slide">
-                        <img src="img/slider-car/slider-car_01.jpg" alt="Slide 3">
+                        <img src="img/slider-car/slider-car_03.jpg" alt="Slide 3">
                         <span class="slider__text">BMW  M5 F90 Competition</span>
                     </a>
                     <a href="booking-details-1.html" class="slide">
@@ -298,7 +299,7 @@
                         <span class="slider__text">Mersedes Benz V-Class</span>
                     </a>
                     <a href="booking-details-1.html" class="slide">
-                        <img src="img/slider-car/slider-car_01.jpg" alt="Slide 3">
+                        <img src="img/slider-car/slider-car_03.jpg" alt="Slide 3">
                         <span class="slider__text">BMW  M5 F90 Competition</span>
                     </a>
                 </div>
@@ -455,7 +456,7 @@
                         </div>
                         <form action="#" class="subscribe__form">
                             <input type="email" placeholder="example@gmail.com">
-                            <button class="button__subscribe">Subscribe</button>
+                            <button onclick="showMessage()" class="button__subscribe">Subscribe</button>
                         </form>
                     </div>
                     <div class="footer__grid">
@@ -468,9 +469,9 @@
                             </div>
                         </div>
                         <ul class="footer__l-p-t">
-                            <li class="footer__legal">Legal</li>
-                            <li class="footer__privacy">Privacy Policy</li>
-                            <li class="footer__terms">Terms of Use</li>
+                            <li onclick="footer__li1()" class="footer__legal">Legal</li>
+                            <li onclick="footer__li2()" class="footer__privacy">Privacy Policy</li>
+                            <li onclick="footer__li3()" class="footer__terms">Terms of Use</li>
                         </ul>
                     </div>
                 </div>
