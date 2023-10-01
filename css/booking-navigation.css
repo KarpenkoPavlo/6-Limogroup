@@ -40,6 +40,10 @@
 .navigation__circle:hover {
     background-color: #969696;
     color: #000;
+    transition: all 0.3s ease 0s;
+}
+.navigation__circle:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .navigation__circle:not(:last-child) {
     margin-bottom: 11px;

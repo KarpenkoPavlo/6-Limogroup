@@ -20,6 +20,10 @@
 }
 .header-search__distance:hover {
     background: #272727;
+    transition: all 0.3s ease 0s;
+}
+.header-search__distance:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .header-search__hourly {
     background: #484848;
@@ -29,6 +33,10 @@
 }
 .header-search__hourly:hover {
     background: #272727;
+    transition: all 0.3s ease 0s;
+}
+.header-search__hourly:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .serach__bottom {
 }
@@ -77,6 +85,9 @@
     background: #272323;
     color: #fff;
     transition: all 0.5s ease 0s;
+}
+.bottom-search__button:not(:hover) {
+    transition: all 1s ease 0s;
 }
 @media (max-width: 1500px) {
     /* .search {

@@ -115,6 +115,15 @@ textarea {
     background: #FFF;
     padding: 28px 37px 21px 37px;
 }
+.payment-flex__stripe:hover,
+.payment-flex__paypal:hover {
+    transform: scale(0.95);
+    transition: all 0.3s ease 0s;
+}
+.payment-flex__stripe:not(:hover),
+.payment-flex__paypal:not(:hover) {
+    transition: all 0.5s ease 0s;
+}
 /*visible=none|form-number*/
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

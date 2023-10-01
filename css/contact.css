@@ -92,6 +92,9 @@ input[type="checkbox"] {
     color: #fff;
     transition: all 0.3s ease 0s;
 }
+.main-contact__button:not(:hover) {
+    transition: all 1s ease 0s;
+}
 .contact__image {
 }
 .contact__image img {

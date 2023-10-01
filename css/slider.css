@@ -14,7 +14,7 @@
 .slider__buttons img {
     max-width: 60px;
 }
-.slider__prev-button {
+/* .slider__prev-button {
     background: #727171;
     padding: 0px 50px;
     border-radius: 30px;
@@ -23,10 +23,7 @@
     background: #727171;
     padding: 0px 50px;
     border-radius: 30px;
-}
-.slider__next-button:hover {
-    background: #484848;
-}
+} */
 .slider__menu {
 
 }

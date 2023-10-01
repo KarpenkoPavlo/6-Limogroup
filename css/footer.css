@@ -38,8 +38,6 @@
     width: 579px;
     height: 65px;
     padding: 22px 25px;
-}
-.subscribe__form input {
     margin-bottom: 5px;
 }
 .button__subscribe {
@@ -55,6 +53,9 @@
     background-color: #727171;
     color: #fff;
     transition: all 0.3s ease 0s;
+}
+.button__subscribe:not(:hover) {
+    transition: all 1s ease 0s;
 }
 .footer__grid {
 }
@@ -91,8 +92,14 @@
 .footer__legal:hover,
 .footer__privacy:hover,
 .footer__terms:hover {
-    text-decoration: underline;
-    cursor: pointer; /* Курсор при наведении */
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.footer__legal:not(:hover),
+.footer__privacy:not(:hover),
+.footer__terms:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .footer__menu {
 }

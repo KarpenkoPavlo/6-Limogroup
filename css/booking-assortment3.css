@@ -46,6 +46,9 @@
     color: #fff;
     transition: all 0.3s ease 0s;
 }
+.assortment__left-button:not(:hover) {
+    transition: all 1s ease 0s;
+}
 .assortment-left__down-menu {
     border-radius: 17px;
     background: #333;
@@ -87,7 +90,7 @@
     position: absolute;
     top: 20px;
     left: 23px;
-    bottom: 233px;
+    bottom: 230px;
     display: inline-block;
     border-radius: 5px;
     background: #FFF;
@@ -101,6 +104,9 @@
     background-color: #746e6e;
     color: #fff;
     transition: all 0.3s ease 0s;
+}
+.assortment-end__button:not(:hover) {
+    transition: all 1s ease 0s;
 }
 .assortment-end__down {
 }

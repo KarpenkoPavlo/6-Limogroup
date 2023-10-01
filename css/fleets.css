@@ -68,6 +68,9 @@
     color: #fff;
     transition: all 0.3s ease 0s;
 }
+.car-info__button:not(:hover) {
+    transition: all 1s ease 0s;
+}
 .car-info__price {
 }
 .car-price {

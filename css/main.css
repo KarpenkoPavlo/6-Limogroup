@@ -49,6 +49,9 @@
     background: #727171;
     transition: all 0.5s ease 0s;
 }
+.main__button:not(:hover) {
+    transition: all 1s ease 0s;
+}
 .main__image {
     padding-left: 400px;
 }

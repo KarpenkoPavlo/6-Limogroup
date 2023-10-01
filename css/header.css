@@ -46,6 +46,9 @@
     transition: all 0.3s ease 0s;
     color: #fff;
 }
+.menu-header__item:not(:hover){
+    transition: all 0.5s ease 0s;
+}
 .menu-header__link {
 }
 .header__info {
@@ -63,6 +66,9 @@
     transform: scale(1.1);
     transition: all 0.3s ease 0s;
 }
+.header__number:not(:hover){
+    transition: all 0.5s ease 0s;
+}
 .header__contact {
     background-color: #fff;
     color: #000;
@@ -77,6 +83,9 @@
     background: #727171;
     color: #fff;
     transition: all 0.5s ease 0s;
+}
+.header__contact:not(:hover) {
+    transition: all 1s ease 0s;
 }
 @media (max-width: 1500px) {
     .header__right {
@@ -127,6 +136,9 @@
 .current-language:hover {
     transform: scale(1.1);
     transition: all 0.3s ease 0s;
+}
+.current-language:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .language-list {
     display: none;
