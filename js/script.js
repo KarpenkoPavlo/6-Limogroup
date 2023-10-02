@@ -100,4 +100,16 @@ function footer__li3() {
   alert("I am footer li 3)");
 }
 
-//
+/*burger*/
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.header__burger');
+  const menuRight = document.querySelector('.header__right');
+
+  burger.addEventListener('click', function () {
+      if (menuRight.style.display === 'block') {
+          menuRight.style.display = 'none';
+      } else {
+          menuRight.style.display = 'block';
+      }
+  });
+});

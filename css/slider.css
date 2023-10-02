@@ -14,16 +14,6 @@
 .slider__buttons img {
     max-width: 60px;
 }
-/* .slider__prev-button {
-    background: #727171;
-    padding: 0px 50px;
-    border-radius: 30px;
-}
-.slider__next-button {
-    background: #727171;
-    padding: 0px 50px;
-    border-radius: 30px;
-} */
 .slider__menu {
 
 }
@@ -167,8 +157,12 @@ button-slider {
 }
 .prev:hover,
 .next:hover {
-    background-color: #666;
+    background-color: #8a8a8a;
     transition: all 0.3s ease 0s;
+}
+.prev:not(:hover),
+.next:not(:hover) {
+    transition: all 0.2s ease 0s;
 }
 .prev img {
     width: 50px;

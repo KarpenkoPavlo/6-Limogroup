@@ -150,6 +150,14 @@
     right: 20px;
     z-index: 99;
     cursor: pointer;
+    transform: scale(0.8);
+}
+#scrollToTopButton:hover {
+    transform: scale(0.9);
+    transition: all 0.3s ease 0s;
+}
+#scrollToTopButton:not(:hover) {
+    transition: all 0.3s ease 0s;
 }
 @media (max-width: 991.98px) {
 .footer__flex {
