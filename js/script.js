@@ -101,15 +101,55 @@ function footer__li3() {
 }
 
 /*burger*/
+// document.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector('.header__burger');
+//   const menuRight = document.querySelector('.header__right');
+
+//   burger.addEventListener('click', function () {
+//       if (menuRight.style.left === '-100%') 
+//       {
+//           menuRight.style.left = '0';
+//       } else {
+//           menuRight.style.left = '-100%';
+//       }
+//   });
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector('.header__burger');
+//   const menuRight = document.querySelector('.header__right');
+//   const body = document.body; // Получаем элемент <body>
+
+//   burger.addEventListener('click', function () {
+//     if (menuRight.style.left === '-100%') {
+//       menuRight.style.left = '0'; // Показываем меню
+//       body.style.overflowY = 'hidden'; // Блокируем прокрутку сайта
+//     } else {
+//       menuRight.style.left = '-100%'; // Скрываем меню
+//       body.style.overflowY = 'auto'; // Разблокируем прокрутку сайта
+//     }
+//   });
+// });
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.header__burger');
   const menuRight = document.querySelector('.header__right');
+  const headerMenu = document.querySelector('.header');
 
   burger.addEventListener('click', function () {
-      if (menuRight.style.display === 'block') {
-          menuRight.style.display = 'none';
-      } else {
-          menuRight.style.display = 'block';
-      }
+    if (menuRight.style.left === '-100%') {
+      headerMenu.style.height = 'auto';
+      menuRight.style.left = '0';
+    } else {
+      headerMenu.style.height = '150px';
+      menuRight.style.left = '-100%';
+    }
+    // if (window.innerWidth > '767.98px') {
+    //   headerMenu.style.height = '110px';
+    // } else {
+    //   headerMenu.style.height = '100%';
+    // }
   });
 });

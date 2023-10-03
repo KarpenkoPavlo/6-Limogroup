@@ -52,7 +52,7 @@
 .car-info__button {
     color: #000;
     position: relative;
-    z-index: 5;
+    z-index: 2;
     font-family:"Red Hat Display";
     font-size: 18px;
     font-weight: 400;

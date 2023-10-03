@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico.png">
-    <title>Booking Details 1</title>
+    <title>Choose a Venicle</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__background">
                 <div class="header__logo">
                     <a href="index.html" class="header-logo__link">
@@ -21,16 +21,16 @@
                     <nav class="header__menu menu-header">
                         <ul class="menu-header__items">
                             <li class="menu-header__item">
-                                <a href="booking-details-1.html" class="menu-header__link">Home</a>
+                                <a href="#header" class="menu-header__link">Home</a>
                             </li>
                             <li class="menu-header__item">
-                                <a href="index.html" class="menu-header__link">About Us</a>
+                                <a href="#about" class="menu-header__link">About Us</a>
                             </li>
                             <li class="menu-header__item">
-                                <a href="index.html" class="menu-header__link">Our Services</a>
+                                <a href="#services" class="menu-header__link">Our Services</a>
                             </li>
                             <li class="menu-header__item">
-                                <a href="index.html" class="menu-header__link">Fleets</a>
+                                <a href="#fleets" class="menu-header__link">Fleets</a>
                             </li>
                         </ul>
                     </nav>
@@ -47,8 +47,11 @@
                                 <li><a href="#" data-lang="fr">FRN</a></li>
                             </ul>
                         </div>
-                        <a href="index.html" class="header__contact">Contact Us</a>
+                        <a href="#contact" class="header__contact">Contact Us</a>
                     </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
                 </div>
             </div>
         </header>
@@ -385,6 +388,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
