@@ -1,7 +1,7 @@
 .search {
     position: relative;
     z-index: 1;
-    margin-top: -93px;
+    margin-top: -200px;
 }
 .search__container {
 }
@@ -89,12 +89,6 @@
 .bottom-search__button:not(:hover) {
     transition: all 1s ease 0s;
 }
-@media (max-width: 1500px) {
-    /* .search {
-        padding-top: 50px;
-        margin-top: 0px;
-    } */
-}
 @media (max-width: 1345px) {
     .bottom-search__item {
         padding: 20px 20px;
@@ -128,6 +122,9 @@
     }
 }
 @media (max-width: 991.98px) {
+    .search__container {
+        width: 100%;
+    }
     .bottom-search__item {
         padding: 16px;
     }

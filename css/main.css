@@ -75,6 +75,16 @@
     }
 }
 @media (max-width: 767.98px) {
+    .main {
+        position: relative;
+        top: -80px;
+    }
+    .main__title {
+        font-size: 100px;
+    }
+    .main__background {
+        border-radius: 0px;
+    }
     .main__info {
         padding: 16px 0px 152px 19px;
     }
@@ -82,9 +92,21 @@
         max-width: 100%;
     }
 }
+@media (max-width: 570px) {
+    .main__background {
+        min-height: 300px;
+        padding: 0px 0px;
+    }
+    .main__title {
+        font-size: 70px;
+    }
+    .main__title:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
 @media (max-width: 479.98px) {
     .main__background {
-        min-height: 510px;
+        min-height: 250px;
     }
     .main__info {
         padding: 10px 0px 132px 15px;

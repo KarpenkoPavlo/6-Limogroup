@@ -154,11 +154,13 @@
         font-size: 48px;
     }
     .fleets-car__background {
-        padding-left: 100px;
+        padding-left: 10px;
     }
     .car-info__image {
         margin-top: -70px;
     }
+}
+@media (max-width: 840px) {
 }
 @media (max-width: 767.98px) {
     .fleets {
