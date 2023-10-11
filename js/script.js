@@ -1,4 +1,4 @@
-/*==========================Choose another language==================================*/
+/*Choose another language*/
 
 document.addEventListener('DOMContentLoaded', function() {
     var currentLanguage = document.querySelector('.current-language');
@@ -29,34 +29,76 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /*================================Slider==========================*/
+  /*Slider*/
 
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  let currentIndex = 0;
-  
-  function updateSlider() {
-      slides.forEach((slide, index) => {
-          const offset = (index - currentIndex) * 50;
-          slide.style.transform = `translateX(${offset}%)`;
-      });
-  }
-  
-  prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      updateSlider();
-  });
-  
-  nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateSlider();
-  });
-  
-  updateSlider();
+ //get element
+const sliderContainer = document.querySelector('.slider__container');
+const slides = document.querySelectorAll('.slides__item');
+const prevButton = document.querySelector('.button__prev');
+const nextButton = document.querySelector('.button__next');
 
-/*==========================="Back to the top" button=======================*/
+//current slider
+const slidesToShow = 3;
+
+// Змінні для ведення обліку поточного слайду
+let currentSlide = 0;
+
+//slider active
+function showSlide() {
+  slides.forEach((slide, index) => {
+    if (index >= currentSlide && index < currentSlide + slidesToShow) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+//show next slide
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide();
+}
+
+//show prev slide
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide();
+}
+
+// Обробники подій для кнопок "Наступний" і "Попередній"
+nextButton.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', prevSlide);
+
+showSlide();
+
+
+  // const slider = document.querySelector('.slider');
+  // const slides = document.querySelectorAll('.slide');
+  // const prevButton = document.querySelector('.prev');
+  // const nextButton = document.querySelector('.next');
+  // let currentIndex = 0;
+  
+  // function updateSlider() {
+  //     slides.forEach((slide, index) => {
+  //         const offset = (index - currentIndex) * 50;
+  //         slide.style.transform = `translateX(${offset}%)`;
+  //     });
+  // }
+  
+  // prevButton.addEventListener('click', () => {
+  //     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  //     updateSlider();
+  // });
+  
+  // nextButton.addEventListener('click', () => {
+  //     currentIndex = (currentIndex + 1) % slides.length;
+  //     updateSlider();
+  // });
+  
+  // updateSlider();
+
+/*Back to the top button*/
 
 // We get the "Back to the top" button
 var scrollToTopButton = document.getElementById("scrollToTopButton");
@@ -76,19 +118,19 @@ scrollToTopButton.addEventListener("click", function() {
   document.documentElement.scrollTop = 0; // For other browsers
 });
 
-/*=====================================*/
+/*showMessage*/
 
 function showMessage() {
   alert("Thanks for subscribing)");
 }
 
-/*=====================================*/
+/**/
 
 function showMessageEdit() {
   alert("Error 404(");
 }
 
-/*=====================================*/
+/**/
 
 function footer__li1() {
   alert("I am footer li 1)");
@@ -100,39 +142,7 @@ function footer__li3() {
   alert("I am footer li 3)");
 }
 
-/*burger*/
-// document.addEventListener('DOMContentLoaded', function () {
-//   const burger = document.querySelector('.header__burger');
-//   const menuRight = document.querySelector('.header__right');
-
-//   burger.addEventListener('click', function () {
-//       if (menuRight.style.left === '-100%') 
-//       {
-//           menuRight.style.left = '0';
-//       } else {
-//           menuRight.style.left = '-100%';
-//       }
-//   });
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const burger = document.querySelector('.header__burger');
-//   const menuRight = document.querySelector('.header__right');
-//   const body = document.body; // Получаем элемент <body>
-
-//   burger.addEventListener('click', function () {
-//     if (menuRight.style.left === '-100%') {
-//       menuRight.style.left = '0'; // Показываем меню
-//       body.style.overflowY = 'hidden'; // Блокируем прокрутку сайта
-//     } else {
-//       menuRight.style.left = '-100%'; // Скрываем меню
-//       body.style.overflowY = 'auto'; // Разблокируем прокрутку сайта
-//     }
-//   });
-// });
-
-
-
+/*Burger*/
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.header__burger');
   const menuRight = document.querySelector('.header__right');
@@ -146,10 +156,5 @@ document.addEventListener('DOMContentLoaded', function () {
       headerMenu.style.height = '150px';
       menuRight.style.left = '-100%';
     }
-    // if (window.innerWidth > '767.98px') {
-    //   headerMenu.style.height = '110px';
-    // } else {
-    //   headerMenu.style.height = '100%';
-    // }
   });
 });

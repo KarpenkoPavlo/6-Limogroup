@@ -36,4 +36,7 @@
         align-items: center;
         row-gap: 70px;
     }
+    .brand__background {
+        border-radius: 0px;
+    }
 }

@@ -42,13 +42,6 @@
     border-radius: 25px;
     padding-right: 5px;
 }
-.bottom-about__image img:hover {
-    transform: scale(1.01);
-    transition: all 0.3s ease 0s;
-}
-.bottom-about__image img:not(:hover) {
-    transition: all 0.5s ease 0s;
-}
 .bottom-text {
     display: flex;
     flex-direction: column;
