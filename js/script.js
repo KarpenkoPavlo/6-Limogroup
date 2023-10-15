@@ -29,77 +29,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /*Slider*/
 
- //get element
-const sliderContainer = document.querySelector('.slider__container');
-const slides = document.querySelectorAll('.slides__item');
-const prevButton = document.querySelector('.button__prev');
-const nextButton = document.querySelector('.button__next');
+//   /*Slider*/
+//  //get element
+// const sliderContainer = document.querySelector('.slider__container');
+// const slides = document.querySelectorAll('.slides__item');
+// const prevButton = document.querySelector('.button__prev');
+// const nextButton = document.querySelector('.button__next');
 
-//current slider
-const slidesToShow = 3;
+// //current slider
+// const slidesToShow = 3;
 
-// Змінні для ведення обліку поточного слайду
-let currentSlide = 0;
+// // Змінні для ведення обліку поточного слайду
+// let currentSlide = 0;
 
-//slider active
-function showSlide() {
-  slides.forEach((slide, index) => {
-    if (index >= currentSlide && index < currentSlide + slidesToShow) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
+// //slider active
+// function showSlide() {
+//   slides.forEach((slide, index) => {
+//     if (index >= currentSlide && index < currentSlide + slidesToShow) {
+//       slide.style.display = 'block';
+//     } else {
+//       slide.style.display = 'none';
+//     }
+//   });
+// }
 
-//show next slide
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide();
-}
+// //show next slide
+// function nextSlide() {
+//   currentSlide = (currentSlide + 1) % slides.length;
+//   showSlide();
+// }
 
-//show prev slide
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide();
-}
+// //show prev slide
+// function prevSlide() {
+//   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+//   showSlide();
+// }
 
-// Обробники подій для кнопок "Наступний" і "Попередній"
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
+// // Обробники подій для кнопок "Наступний" і "Попередній"
+// nextButton.addEventListener('click', nextSlide);
+// prevButton.addEventListener('click', prevSlide);
 
-showSlide();
+// showSlide();
 
-
-  // const slider = document.querySelector('.slider');
-  // const slides = document.querySelectorAll('.slide');
-  // const prevButton = document.querySelector('.prev');
-  // const nextButton = document.querySelector('.next');
-  // let currentIndex = 0;
-  
-  // function updateSlider() {
-  //     slides.forEach((slide, index) => {
-  //         const offset = (index - currentIndex) * 50;
-  //         slide.style.transform = `translateX(${offset}%)`;
-  //     });
-  // }
-  
-  // prevButton.addEventListener('click', () => {
-  //     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  //     updateSlider();
-  // });
-  
-  // nextButton.addEventListener('click', () => {
-  //     currentIndex = (currentIndex + 1) % slides.length;
-  //     updateSlider();
-  // });
-  
-  // updateSlider();
 
 /*Back to the top button*/
-
 // We get the "Back to the top" button
 var scrollToTopButton = document.getElementById("scrollToTopButton");
 
@@ -157,4 +131,16 @@ document.addEventListener('DOMContentLoaded', function () {
       menuRight.style.left = '-100%';
     }
   });
+});
+
+
+
+/*slider*/
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 45,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
