@@ -130,10 +130,6 @@
     .header__logo:not(:last-child) {
         margin-bottom: 20px;
     }
-    /* .header__right {
-        flex-direction: column;
-        row-gap: 30px;
-    } */
 }
 @media (max-width: 479.98px) {
     .header__right {
