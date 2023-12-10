@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   burger.addEventListener('click', function () {
     if (menuRight.style.left === '-100%') {
-      headerMenu.style.height = 'auto';
       menuRight.style.left = '0';
+      headerMenu.style.height = 'auto';
     } else {
       headerMenu.style.height = '150px';
       menuRight.style.left = '-100%';

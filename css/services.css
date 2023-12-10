@@ -31,13 +31,6 @@
 }
 .info-services__image {
 }
-.info-services__image img:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease 0s;
-}
-.info-services__image img:not(:hover) {
-    transition: all 0.5s ease 0s;
-}
 .info-services__image:not(:last-child) {
     margin-bottom: 29px;
 }
