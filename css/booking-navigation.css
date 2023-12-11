@@ -88,7 +88,8 @@
 }
 @media (max-width: 767.98px) {
     .navigation__background {
-        max-width: 500px;
+        width: 100%;
+        border-radius: 0%;
     }
     .navigation__items {
         flex-direction: column;

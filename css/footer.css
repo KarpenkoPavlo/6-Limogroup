@@ -223,9 +223,6 @@
     .menu-footer__item img:not(:last-child) {
         margin-bottom: 10px;
     }
-    #scrollToTopButton img {
-        width: 40px;
-    }
 }
 @media (max-width: 425px) {
     .subscribe__form input {

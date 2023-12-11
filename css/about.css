@@ -89,7 +89,17 @@
         max-width: 100%;
     }
     .about__bottom {
+        max-width: 100%;
+        border-radius: 0px;
         padding: 40px;
+        transform: scale(1.1);
+    }
+    .text {
+        margin-bottom: 100px;
+    }
+    .bottom-about__image img {
+        border-radius: 25px;
+        padding-right: 5px;
     }
 }
 @media (max-width: 479.98px) {
@@ -98,6 +108,7 @@
     }
     .about__bottom {
         padding: 25px;
+        margin-bottom: 50px;
     }
     .header-about__title {
         font-size: 40px;

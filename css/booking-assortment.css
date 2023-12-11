@@ -300,6 +300,21 @@
     .assortment-ri__background img {
         width: 280px;
     }
+    .assortment__left {
+        background: #333;
+        width: 100%;
+        text-align: center;
+        transform: scale(1.1);
+    }
+    .assortment {
+        padding-top: 100px;
+    }
+    .assortment-left-down__block {
+        padding-bottom: 50px;
+    }
+    .assortment-right__item {
+        padding-top: 100px;
+    }
 }
 @media (max-width: 520px) {
     .assortment-left__menu {
@@ -311,5 +326,9 @@
     }
     .assortment-lb__subtitle {
         font-size: 20px;
+    }
+    .assortment-ri__background {
+        width: 100%;
+        text-align: center;
     }
 }

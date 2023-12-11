@@ -103,6 +103,9 @@
     }
     .main-choose__item {
         display: flex;
+        transform: scale(1.15);
+        border-radius: 0%;
+        margin-bottom: 50px;
     }
     .header-choose__title {
         font-size: 60px;

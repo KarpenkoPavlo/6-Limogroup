@@ -85,8 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
       menuRight.style.left = '0';
       headerMenu.style.height = 'auto';
     } else {
-      headerMenu.style.height = '150px';
+      headerMenu.style.height = '110px';
       menuRight.style.left = '-100%';
+    }
+
+    if(window.innerWidth > 767) {
+      headerMenu.style.height = '140px';
     }
   });
 });

@@ -177,6 +177,20 @@
         left: 32px;
     }
 }
+@media(max-width: 767.98px) {
+    .assortment__left {
+        width: 767.98px;
+    }
+    .assortment__left-button {
+        width: 150px;
+    }
+    .assortment__right {
+        background-color: #333;
+    }
+    .assortment__right iframe {
+        width: 767.98px;
+    }
+}
 @media (max-width: 520px) {
     .assortment-left__line {
         display: grid;
@@ -187,11 +201,6 @@
     }
     .assortment__right {
         margin: 0 auto;
-    }
-    .assortment__end,
-    .assortment-left__down-menu,
-    .assortment-left__menu {
-        width: 390px;
     }
     .assortment__left-right {
         text-align: center;

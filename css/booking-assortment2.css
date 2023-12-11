@@ -198,6 +198,9 @@ input[type="number"]::-webkit-outer-spin-button {
     .payment__flex img {
         max-width: 100%;
     }
+    .assortment__right {
+        padding-top: 50px;
+    }
 }
 @media (max-width: 660px) {
     .assortment__forms {
