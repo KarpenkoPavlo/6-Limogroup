@@ -48,10 +48,15 @@
         padding-top: 420px;
     }
     .swiper-wrapper {
-        gap: 5px;
     }
     .swiper-slide {
+        width: 100%;
+        max-width: 600px;
         padding: 20px 5px 20px 5px;
+    }
+    .swiper-slide img {
+        width: 100%;
+        max-width: 300px;
     }
     .slide__text {
         padding-top: 10px;

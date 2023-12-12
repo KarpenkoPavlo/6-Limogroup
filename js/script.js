@@ -105,4 +105,11 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  // Зміни в параметрах responsive
+  breakpoints: {
+    // Коли ширина екрана менше або рівна 991px
+    991: {
+
+    },
+  },
 });
