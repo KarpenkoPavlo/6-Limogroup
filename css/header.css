@@ -9,14 +9,14 @@
     background-color: rgb(11%, 11%, 11%, 0.8);
     z-index: 5;
 }
-.header__burger::before {
+/* .header__burger::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 .header__background {
     display: flex;
     justify-content: space-between;
@@ -187,39 +187,30 @@
 
 /*burger start*/
 .header__burger {
-    display: none;
-    top: -10px;
-    cursor: pointer;
-}
-.header__burger:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease 0s;
+  display: none;
+  top: -10px;
+  cursor: pointer;
 }
 .header__burger:not(:hover) {
     transition: all 0.2s ease 0s;
 }
-.header__burger:hover span {
-    top: calc(50% - 1px);
+.burger-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.header__burger.active .burger-line:nth-child(1) {
     transform: rotate(-45deg);
-    transition: all 0.5s ease 0s;
 }
-.header__burger:not(:hover) span {
-    top: calc(50% - 1px);
-    transform: rotate(0deg);
-    transition: all 0.5s ease 0s;
+
+.header__burger.active .burger-line:nth-child(2) {
+    opacity: 0;
 }
-.header__burger:hover::after {
-    top: calc(50% - 1px);
+
+.header__burger.active .burger-line:nth-child(3) {
     transform: rotate(45deg);
-    transition: all 0.5s ease 0s;
-}
-.header__burger:not(:hover)::after {
-    top: calc(50% - 1px);
-    transform: rotate(0deg);
-    transition: all 0.5s ease 0s;
-}
-.header__burger:hover::before {
-    display: none;
 }
 @media (max-width: 767.98px) {
     .header__background {
@@ -264,14 +255,6 @@
         position: relative;
         width: 30px;
         height: 20px;
-    }
-    .header__burger::before,
-    .header__burger::after {
-        content: '';
-        background-color: #fff;
-        width: 100%;
-        height: 2px;
-        left: 0;
     }
     .header__burger::before {
     }

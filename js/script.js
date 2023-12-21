@@ -76,25 +76,58 @@ function footer__li3() {
 
 /*Burger*/
 document.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector('.header__burger');
+  const burger = document.getElementById('burger');
   const menuRight = document.querySelector('.header__right');
   const headerMenu = document.querySelector('.header');
+  const body = document.body;
+  const html = document.documentElement;
 
   burger.addEventListener('click', function () {
-    if (menuRight.style.left === '-100%') {
+    burger.classList.toggle('active');
+    toggleMenu();
+  });
+
+  document.addEventListener('click', function (event) {
+    const isClickInsideMenu = menuRight.contains(event.target);
+    const isClickOnBurger = burger.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnBurger) {
+      burger.classList.remove('active');
+      menuRight.style.left = '-100%';
+      headerMenu.style.height = '110px';
+      enableScrolling(); // Дозволяє прокручування при закритті меню
+    }
+  });
+
+  function toggleMenu() {
+    if (menuRight.style.left === '-100%' || menuRight.style.left === '') {
       menuRight.style.left = '0';
       headerMenu.style.height = 'auto';
+      disableScrolling(); // Забороняє прокручування при відкритті меню
     } else {
       headerMenu.style.height = '110px';
       menuRight.style.left = '-100%';
+      enableScrolling(); // Дозволяє прокручування при закритті меню
     }
 
-    if(window.innerWidth > 767) {
+    if (window.innerWidth > 767) {
       headerMenu.style.height = '140px';
     }
-  });
-});
+  }
 
+  function disableScrolling() {
+    const scrollBarWidth = window.innerWidth - html.clientWidth;
+    body.style.overflow = 'hidden';
+    body.style.paddingRight = scrollBarWidth + 'px';
+    html.style.overflow = 'hidden';
+  }
+
+  function enableScrolling() {
+    body.style.overflow = '';
+    body.style.paddingRight = '';
+    html.style.overflow = '';
+  }
+});
 
 
 /*slider*/
