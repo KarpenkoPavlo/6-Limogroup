@@ -31,6 +31,7 @@
     width: 10px;
     height: 350px;
     align-items: start;
+    /* margin-bottom: 5px; */
 }
 .swiper-pagination-bullet {
     width: 50px;
@@ -46,8 +47,6 @@
 @media (max-width: 991.98px) {
     .swiper {
         padding-top: 420px;
-    }
-    .swiper-wrapper {
     }
     .swiper-slide {
         width: 100%;
@@ -66,5 +65,9 @@
         height: 220px;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 766px) {
+    .swiper-slide {
+        width: 100%;
+        max-width: 800px;
+    }
 }

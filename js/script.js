@@ -141,8 +141,29 @@ var swiper = new Swiper(".mySwiper", {
   // Зміни в параметрах responsive
   breakpoints: {
     // Коли ширина екрана менше або рівна 991px
+    2560: {
+      slidesPerView: 3,
+      spaceBetween: 45,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 45,
+    },
     991: {
-
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    766: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
   },
 });
